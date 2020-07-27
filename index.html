@@ -16,7 +16,7 @@
       <div class="container">
          <div class="cart">
             <div class="col-md-12 col-lg-10 mx-auto">
-               <div class="cart-item">
+               <div class="cart-item" id="phone">
                   <div class="row">
                      <div class="col-md-7 center-item">
                         <img src="images/product-1.png" alt="">
@@ -30,26 +30,30 @@
                            <button onclick="handleProductChange('phone', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
                         </div>
                         <h5>$<span id="phone-price" > 749</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+                        <img src="images/remove.png" alt="" class="remove-item" id="phone-remove">
                      </div>
                   </div>
                </div>
 
-               <div class="cart-item">
+               <div class="cart-item" id="case">
                   <div class="row">
+
                      <div class="col-md-7 center-item mx-auto">
                         <img src="images/product-2.png" alt="">
                         <h5>iPhone 11 Silicone Case - Black</h5>
                      </div>
+
                      <div class="col-md-5 center-item">
+
                         <div class="input-group number-spinner">
                            <button onclick="handleProductChange('case', false);" class="btn btn-default"><i class="fas fa-minus"></i></button>
                            <input id="case-count" type="text" class="form-control text-center" value="1">
                            <button onclick="handleProductChange('case', true)" class="btn btn-default"><i class="fas fa-plus"></i></button>
-
                         </div>
-                        <h5>$ <span id="case-price" > 39</span></h5>
-                        <img src="images/remove.png" alt="" class="remove-item">
+
+                        <h5>$ <span id="case-price"> 39</span></h5>
+                        <img src="images/remove.png" alt="" class="remove-item" id="case-remove">
+
                      </div>
                   </div>
                </div>
@@ -64,9 +68,9 @@
                      </div>
 
                      <div class="col-md-4 status">
-                        <h5>$1,278</h5>
-                        <h5>$0</h5>
-                        <h5>$1,278</h5>
+                        <h5>$<span id="total-price"> 788</span></h5>
+                        <h5>$<span id="total-tax">0</span></h5>
+                        <h5>$<span id="grand-price"> 788</span></h5>
                      </div>
                   </div>
                </div>
