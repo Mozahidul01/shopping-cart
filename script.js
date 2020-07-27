@@ -56,4 +56,4 @@ const removeBtn = document.getElementById('phone-remove');
 removeBtn.addEventListener("click", function (event) {
     const removeArea = document.getElementById('phone');
     removeArea.style.display = "none";
-})
+});
