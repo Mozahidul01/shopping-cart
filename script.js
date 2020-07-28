@@ -40,13 +40,16 @@ function calculateTotal() {
     const caseCount = getInputValue('case');
 
     const totalPrice = phoneCount * 749 + caseCount * 39;
-    document.getElementById('total-price').innerText = totalPrice;
+    const newPrice = document.getElementById('total-price');
+    newPrice.innerText = totalPrice;
 
     const totalTax = (totalPrice * 0.05).toFixed(0);
-    document.getElementById('total-tax').innerText = totalTax;
+    const newTax = document.getElementById('total-tax');
+    newTax.innerText = totalTax;
 
-    const grandPrice = totalTax + totalPrice;
-    console.log(grandPrice);
+    const newTotalPrice = parseFloat(totalPrice);
+    const newTotalTax = parseFloat(totalTax);
+    const grandPrice = newTotalPrice + newTotalTax;
     document.getElementById('grand-price').innerText = grandPrice;
 }
 
